@@ -154,8 +154,8 @@ bool Car::RentCar(string userid, int user_type) {
         return false ;
     }
     int days = stoi(temp) ;
-    if( days > 200 ) {
-        cout << "Cannot rent for more than 200 days!" << endl ;
+    if( days > 200 || days < 1 ) {
+        cout << "Invalid Number of days Input !" << endl ;
         return false ;
     }
 
