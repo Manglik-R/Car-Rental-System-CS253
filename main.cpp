@@ -196,7 +196,7 @@ void Employee_Menu(){
     while( option != 6 ) {   
         Employee* employee = EmployeeDBM().SelectEmployee(userid) ;    
         cout << "-----------------------------------" << endl ;
-        cout << "          CUSTOMER WINDOW          " << endl ;
+        cout << "          EMPLOYEE WINDOW          " << endl ;
         cout << "-----------------------------------" << endl ;
         cout << "||  1 - VIEW RENTED CARS         ||" << endl ;
         cout << "||  2 - RENT A CAR               ||" << endl ;
