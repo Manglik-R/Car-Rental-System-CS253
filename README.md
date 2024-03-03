@@ -15,6 +15,47 @@ Run the created executable file by running below code.
 ./a.exe
 ```
 
+## Project Structure
+
+The repository is organised as : 
+- `DB` Folder : This folder acts as the database and contains 4 `.csv` files to store information.
+  - `customer.csv` : This file contains information about customers. It contains 6 different columns namely `UserId`, `Password`, `Name`, `CustomerRecord`, `Dues` and `NumberOfCarsRented`.
+  - `employee.csv` : This file contains information about employees. It contains 6 different columns namely `UserId`, `Password`, `Name`, `EmployeeRecord`, `Dues` and `NumberOfCarsRented`.
+  - `manager.csv` : This file contains information about managers. It contains 6 different columns namely `UserId`, `Password` and `Name`.
+  - `car.csv` : This file contains information about customers. It contains 6 different columns namely `CarId`, `Model`, `Condition`, `RentDate`, `DueDate` and `UserIdRented`.
+
+- `Model.hpp` : This file contains the definitions of classes, functions and structures.
+  - `User` class :
+    - Base class for Customer, Employee and Manager.
+    - Attributes - UserID, Password and Name.
+  - `Customer` class :
+    - Attributes - UserId, Password, Name, CustomerRecord, Dues and NumberOfCarsRented.
+    - Functions - to Authenticate, Login, Calculate Max Cars a Customer can Rent, Return a Rented Car, Calculate CustomerRecord, Clear Dues and Display All Customers.
+  - `Employee` class :
+    - Attributes - UserId, Password, Name, EmployeeRecord, Dues and NumberOfCarsRented.
+    - Functions - to Authenticate, Login, Calculate Max Cars a Employee can Rent, Return a Rented Car, Calculate EmployeeRecord, Clear Dues and Display All Employees.
+  - `Car` class :
+    - Attributes - CarId, Model, Condition, RentPerDay, RentDate, DueDate and UserID.
+    - Functions - to Rent a Car, check if a Car is Rented, Calculate Fines, Calculate Dues and Display Cars - Rented Cars, Available Cars and All Cars of Store. 
+  - `CustomerDBM` class : A vector of Customer class which reads from and write to `.csv` files.
+    - Functions - to Add a Customer, Delete a Customer, Update a Customer, Select a particular Customer using UserID and get List of all Customers.
+  - `EmployeeDBM` class : A vector of Employee class which reads from and write to `.csv` files.
+    - Functions - to Add an Employee, Delete an Employee, Update an Employee, Select a particular Employee using UserID and get List of all Employee.
+  - `ManagerDBM` class : A vector of Manager class which reads from and write to `.csv` files.
+    - Functions - to Add a Manager, Delete a Manager, Update a Manager, Select a particular Manager using UserID and get List of all Manager.
+  - `CarDBM` class : A vector of Customer class which reads from and write to `.csv` files.
+    - Functions - to Add a Car, Delete a Car, Update a Car, Select a particular Car using CarID and get List of all Cars.
+  - `Date` structure : A structure to perform operations on Date Type data.
+  - Other Functions : to find Number of days between 2 dates, Read a `.csv` file, Write a `.csv` file and check if a string is a Decimal/Number or not.
+
+- `Car.cpp` : Contains implementation of functions of `Car` class.
+- `Customer.cpp` : Contains implementation of functions of `Customer` class.
+- `Employee.cpp` : Contains implementation of functions of `Employee` class.
+- `Manager.cpp` : Contains implementation of functions of `Manager` class.
+- `DB_Manager.cpp` : Contains implementation of functions of `CustomerDBM`, `EmployeeDBM`, `ManagerDBM` and `CarDBM` class.
+- `main.cpp` : Consists of the main program, managing the flow of control between different functions and classes. Also includes implementation of `Other Functions`.
+
+
 ## Running the Program
 This repository contains 4 different databases to store information about `Customers`, `Employees`, `Managers` and `Cars`.
 There are initially 5 Customers, 5 Employees, 6 Cars and 1 Manager. The details of which are shown below :
@@ -65,8 +106,14 @@ There are initially 5 Customers, 5 Employees, 6 Cars and 1 Manager. The details 
 - It is assumed that condition of a car can improve as well worsen when returned back by a User and Record of the User is updated based on change in the condition of the Car and how late car is returned back.
 - A User can rent a Car for upto 200 days only.
 
+## Portability 
 
+- The code was written in Windows operating system. Few functionalities can cause issue in other operating systems, like to clear terminal screen in Linux, replace `system("cls")` has to be changed to `system("clear")`.
 
+## Author
+- Raghav Manglik
+- IIT Kanpur
+- 220854 
 
 
 
