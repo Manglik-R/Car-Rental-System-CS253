@@ -255,6 +255,10 @@ void Manager::AddCar() {
     cin.ignore(10000, '\n');
     if(!isNumber(temp)) return ;
     condition = stoi(temp) ;
+    if(condition <0 || condition > 10) {
+        cout << "Invalid Condition!" << endl ;
+        return ;
+    }
     cout << "[Input] Enter Rent per day: " ;
     float rent ;
     cin >> temp ;
