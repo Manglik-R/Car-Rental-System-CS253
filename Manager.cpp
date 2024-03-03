@@ -308,9 +308,6 @@ void Manager::UpdateCar() {
     cout << "Model: " << car -> getModel() << endl ;
     cout << "Condition: " << car -> getCondition() << endl ;
     cout << "Rent per day in Rs.: " << car -> getRent() << endl ;
-    cout << "Rent Date: " << car -> showRentDate() << endl ;
-    cout << "Due Date: " << car -> showDueDate() << endl ;
-    cout << "User: " << car -> getUser() << endl ;
     cout << "-----------------------------------" << endl ;
     cout << "[Input] Enter New Car Model: " ;
     cin >> car_model ;
