@@ -205,6 +205,10 @@ void Manager::UpdateUser( int user_type ) {
         cin.ignore(10000, '\n');
         if(!isDecimal(temp)) return ;
         dues = stof(temp) ;
+        if(dues < 0) {
+            cout << "Invalid Data!" << endl ;
+            return ;
+        }
         cout << "[Input] Enter new Number of Cars Rented: " ;
         cin >> temp ;
         cin.clear();
