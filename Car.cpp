@@ -159,11 +159,11 @@ bool Car::RentCar(string userid, int user_type) {
         return false ;
     }
 
-    time_t now = time(0) + 19800 ; 
+    time_t now = time(0) ; 
     tm *ltm = localtime(&now);
     string rent_date = to_string(ltm->tm_mday) + "-" + to_string(1 + ltm->tm_mon) + "-" + to_string(1900 + ltm->tm_year) ;
 
-    time_t now2 = time(0) + 19800 + days*24*60*60 ;
+    time_t now2 = time(0) + days*24*60*60 ;
     tm *ltm2 = localtime(&now2);
     string due_date = to_string(ltm2->tm_mday) + "-" + to_string(1 + ltm2->tm_mon) + "-" + to_string(1900 + ltm2->tm_year) ;
 
