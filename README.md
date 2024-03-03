@@ -54,6 +54,16 @@ There are initially 5 Customers, 5 Employees, 6 Cars and 1 Manager. The details 
 
 **NOTE : In Cars database, If a car is not rented its attributes `Due Date`, `Rent Date` and `UserID of who rented` are left blank.**
 
+## Assumptions and Design 
+
+- A Car rented to a User can not be deleted or updated by Manager.
+- If Manager deletes a User, Cars rented by him are returned back.
+- Condition of a Car is rated on a scale of `0 to 10`, 0 being very bad condition and 10 being very good.
+- Record of both Customer and Employee are maintained using a scale from `0 to 100`, 0 being bad and 100 being good.
+-  If the Customer/Employee database is empty and a new User is added, User is assigned an initial record score of `80`.
+- A User can rented maximum upto `(User Record)/30 + 1` Cars.
+- It is assumed that condition of a car can improve as well worsen when returned back by a User and Record of the User is updated based on change in the condition of the Car and how late car is returned back.
+- A User can rent a Car for upto 200 days only.
 
 
 
