@@ -228,7 +228,7 @@ void Manager::UpdateUser( int user_type ) {
         EmployeeDBM().UpdateEmployee(employee) ;
         cout << "Employee Updated!" << endl ;
     }
-    else if( user_type == 3 ){
+    else if( user_type == 2 ){
         Manager* manager = new Manager(userid, password, name) ;
         ManagerDBM().UpdateManager(manager) ;
         cout << "Manager Updated!" << endl ;
