@@ -122,7 +122,6 @@ string Customer::CustomerLogin() {
     Customer customer ;
     
     for( int i = 0 ; i < 3 ; i++ ){
-        system("cls") ;
         cout << "-----------------------------------" << endl ;
         cout << "           LOGIN WINDOW            " << endl ;
         cout << "-----------------------------------" << endl ;
@@ -156,7 +155,6 @@ string Customer::CustomerLogin() {
 }
 
 void Customer::ReturnRequest() {
-    system("cls") ;
     cout << "-----------------------------------" << endl ;
     cout << "          RETURN A CAR             " << endl ;
     cout << "-----------------------------------" << endl ;
@@ -247,7 +245,6 @@ void Customer::ReturnRequest() {
 }
 
 void Customer::clearDues() {
-    system("cls") ;
     cout << "-----------------------------------" << endl ;
     cout << "            CLEAR DUES             " << endl ;
     cout << "-----------------------------------" << endl ;
@@ -280,7 +277,6 @@ void Customer::clearDues() {
 }
 
 void Customer::DisplayAllCustomers() {
-    system("cls") ;
     int flag = 0 ;
     vector<Customer*> customers = CustomerDBM().ListCustomers() ;
     cout << "-----------------------------------" << endl ;
