@@ -283,7 +283,7 @@ void Manager::DeleteCar() {
     cin >> car_id ;
     cin.clear();
     cin.ignore(10000, '\n');
-    if( CarDBM().SelectCar(car_id) -> getUser() != "" ) {
+    if( CarDBM().SelectCar(car_id) != NULL && CarDBM().SelectCar(car_id) -> getUser() != "") {
         cout << "Rented Car can not be deleted!" << endl ;
         return ;
     }        
