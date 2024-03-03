@@ -179,7 +179,7 @@ void Customer::ReturnRequest() {
         return ;
     }
         
-    time_t now = time(0) + 19800 ;
+    time_t now = time(0) ;
     tm *ltm2 = localtime(&now);
     string today = to_string(ltm2->tm_mday) + "-" + to_string(1 + ltm2->tm_mon) + "-" + to_string(1900 + ltm2->tm_year) ;
 
