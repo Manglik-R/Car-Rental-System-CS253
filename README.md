@@ -36,7 +36,10 @@ The repository is organised as :
     - Functions - to Authenticate, Login, Calculate Max Cars a Employee can Rent, Return a Rented Car, Calculate EmployeeRecord, Clear Dues and Display All Employees.
   - `Car` class :
     - Attributes - CarId, Model, Condition, RentPerDay, RentDate, DueDate and UserID.
-    - Functions - to Rent a Car, check if a Car is Rented, Calculate Fines, Calculate Dues and Display Cars - Rented Cars, Available Cars and All Cars of Store. 
+    - Functions - to Rent a Car, check if a Car is Rented, Calculate Fines, Calculate Dues and Display Cars - Rented Cars, Available Cars and All Cars of Store.
+  - `Manager` class :
+    - Attributes - UserID, Password and Name
+    - Functions - Can View all cars and Users, as well as Add, Update and Modify Users and Not rented Cars.
   - `CustomerDBM` class : A vector of Customer class which reads from and write to comma separated values files.
     - Functions - to Add a Customer, Delete a Customer, Update a Customer, Select a particular Customer using UserID and get List of all Customers.
   - `EmployeeDBM` class : A vector of Employee class which reads from and write to comma separated values files.
