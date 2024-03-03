@@ -41,15 +41,21 @@ There are initially 5 Customers, 5 Employees, 6 Cars and 1 Manager. The details 
 | UserID  | Password | Name  |
 | :-------------: | :-------------: | :-------------: |
 | Manager1 | Password1  | Harry |
+
 ### Cars
 | CarID  | Model | Condition  | Rent per Day in Rs. |  Rent Date  | Due Date | UserID of who rented |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-----------: | :-----------: |
-| UP1818 | Tata | 8 | 2000 |  | 1 | 1 |
-| UK1812 | Mahindra | 9 | 2500 | 1800 | 0 | 1 |
-| MH3632 | Toyota | 6 | 2200 | 2200 | 0 | 1 |
-| DL9891 | Hyundai | 7 | 2000 | 2600 | 1 | 1 |
-| GJ5172 | Maruti | 5 | 1800 | 9800 | 0 | 1 |
-| UP8728 | Skoda | 8 | 3000 | 9800 | 0 | 1 |
+| UP1818 | Tata | 8 | 2000 | 27-02-2024 | 04-03-2024 | User2 |
+| UK1812 | Mahindra | 9 | 2500 |  |  |  |
+| MH3632 | Toyota | 6 | 2200 | 28-02-2024 | 07-03-2024 | User5 |
+| DL9891 | Hyundai | 7 | 2000 | 24-02-2024 | 01-03-2024 | User5 |
+| GJ5172 | Maruti | 5 | 1800 | 15-02-2024 | 03-03-2024 | Employee1 |
+| UP8728 | Skoda | 8 | 3000 | 23-02-2024 | 08-03-2024 | Employee4 |
+
+**NOTE : In Cars database, If a car is not rented its attributes `Due Date`, `Rent Date` and `UserID of who rented` are left blank.**
+
+
+
 
 
 
