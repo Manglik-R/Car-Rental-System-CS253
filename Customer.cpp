@@ -250,6 +250,10 @@ void Customer::clearDues() {
     cout << "-----------------------------------" << endl ;
     cout << "[NOTE] Your Current Dues to be paid: Rs. " << this -> getDues() << endl ;
     cout << "-----------------------------------" << endl ;
+    if( this -> getDues() == 0 ) {
+        cout << "No Dues to be paid!" << endl ;
+        return ;
+    }
     cout << "[Input] How much would you like to pay? (Rs.): " ;
     string temp ;
     cin >> temp ;
