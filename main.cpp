@@ -118,18 +118,18 @@ int DaysDiff(string due_date, string today) {
 
 // A function to ask user to confirm his/her action
 bool confirm() {
-    cout << "[Input] Confirm Payment? (Y/N): " ;
+    cout << "[Input] Confirm ? (Y/N): " ;
     char confirm ;
     cin >> confirm ;
     cin.clear();
     cin.ignore(10000, '\n');
     if( confirm == 'N' || confirm == 'n' ) {
-        cout << "Payment Cancelled!" << endl ;
+        cout << "Process Cancelled!" << endl ;
         return false ;
     }
     else if( confirm != 'Y' && confirm != 'y' ) {
         cout << "Invalid input!" << endl ;
-        cout << "Payment Cancelled!" << endl ;
+        cout << "Process Cancelled!" << endl ;
         return false ;
     }
     return true ;

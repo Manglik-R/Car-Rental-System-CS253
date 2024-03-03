@@ -58,7 +58,7 @@ string Manager::ManagerLogin() {
         
         else {
             cout << "Login Failed!" << endl ;
-            if( i == 4 ) {
+            if( i == 2 ) {
                 cout << "Maximum attempts reached!" << endl ;
                 return "" ;
             }

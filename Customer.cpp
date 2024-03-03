@@ -25,7 +25,7 @@ Customer::Customer(string userid, string password, string name) {
 
 float Customer::CalculateCustomerRecord( int initial_condition , int final_condition , int days ) {
     float record = this->getCustomerRecord() ;
-    record += (initial_condition - final_condition) * 0.5 ;
+    record -= (initial_condition - final_condition) * 0.5 ;
     record -= days * 0.5 ;
     record += 1 ;
     if( record < 0 ) {
@@ -147,7 +147,7 @@ string Customer::CustomerLogin() {
         
         else {
             cout << "Login Failed!" << endl ;
-            if( i == 4 ) {
+            if( i == 2 ) {
                 cout << "Maximum attempts reached!" << endl ;
                 return "" ;
             }
