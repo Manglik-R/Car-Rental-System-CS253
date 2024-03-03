@@ -250,7 +250,7 @@ void Manager::AddCar() {
     cin.clear();
     cin.ignore(10000, '\n');
     cout << "[Input] Enter Car Condition: " ;
-    cin >> condition ;
+    cin >> temp ;
     cin.clear();
     cin.ignore(10000, '\n');
     if(!isNumber(temp)) return ;
