@@ -18,7 +18,7 @@ Run the created executable file by running below code.
 ## Project Structure
 
 The repository is organised as : 
-- `DB` Folder : This folder acts as the database and contains 4 `.csv` files to store information.
+- `DB` Folder : This folder acts as the database and contains 4 comma separated values files to store information.
   - `customer.csv` : This file contains information about customers. It contains 6 different columns namely `UserId`, `Password`, `Name`, `CustomerRecord`, `Dues` and `NumberOfCarsRented`.
   - `employee.csv` : This file contains information about employees. It contains 6 different columns namely `UserId`, `Password`, `Name`, `EmployeeRecord`, `Dues` and `NumberOfCarsRented`.
   - `manager.csv` : This file contains information about managers. It contains 6 different columns namely `UserId`, `Password` and `Name`.
@@ -37,16 +37,16 @@ The repository is organised as :
   - `Car` class :
     - Attributes - CarId, Model, Condition, RentPerDay, RentDate, DueDate and UserID.
     - Functions - to Rent a Car, check if a Car is Rented, Calculate Fines, Calculate Dues and Display Cars - Rented Cars, Available Cars and All Cars of Store. 
-  - `CustomerDBM` class : A vector of Customer class which reads from and write to `.csv` files.
+  - `CustomerDBM` class : A vector of Customer class which reads from and write to comma separated values files.
     - Functions - to Add a Customer, Delete a Customer, Update a Customer, Select a particular Customer using UserID and get List of all Customers.
-  - `EmployeeDBM` class : A vector of Employee class which reads from and write to `.csv` files.
+  - `EmployeeDBM` class : A vector of Employee class which reads from and write to comma separated values files.
     - Functions - to Add an Employee, Delete an Employee, Update an Employee, Select a particular Employee using UserID and get List of all Employee.
-  - `ManagerDBM` class : A vector of Manager class which reads from and write to `.csv` files.
+  - `ManagerDBM` class : A vector of Manager class which reads from and write to comma separated values files.
     - Functions - to Add a Manager, Delete a Manager, Update a Manager, Select a particular Manager using UserID and get List of all Manager.
-  - `CarDBM` class : A vector of Customer class which reads from and write to `.csv` files.
+  - `CarDBM` class : A vector of Customer class which reads from and write to comma separated values files.
     - Functions - to Add a Car, Delete a Car, Update a Car, Select a particular Car using CarID and get List of all Cars.
   - `Date` structure : A structure to perform operations on Date Type data.
-  - Other Functions : to find Number of days between 2 dates, Read a `.csv` file, Write a `.csv` file and check if a string is a Decimal/Number or not.
+  - Other Functions : to find Number of days between 2 dates, Read a comma separated values file, Write a comma separated values file and check if a string is a Decimal/Number or not.
 
 - `Car.cpp` : Contains implementation of functions of `Car` class.
 - `Customer.cpp` : Contains implementation of functions of `Customer` class.
